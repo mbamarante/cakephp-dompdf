@@ -1,5 +1,5 @@
 {
-    "name": "daoandco/cakephp-dompdf",
+    "name": "mbamarante/cakephp-dompdf",
     "description": "Dompdf plugin for CakePHP",
     "type": "cakephp-plugin",
     "keywords": [
@@ -17,10 +17,15 @@
             "email": "contact@flavienbeninca.fr",
             "homepage": "http://www.flavienbeninca.fr",
             "role": "Maintainer"
+        },
+        {
+            "name": "Maicon Amarante",
+            "email": "maicon.ba@gmail.com",
+            "role": "Maintainer"
         }
     ],
     "require": {
-        "php": ">=5.4.16",
+        "php": ">=7.2",
         "cakephp/cakephp": "~4.0",
         "dompdf/dompdf": "0.8.*"
     },
