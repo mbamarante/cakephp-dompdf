@@ -31,7 +31,7 @@ class PdfView extends View {
         'color' => [0,0,0],
     ];
 
-    public function initialize() {
+    public function initialize(): void {
         parent::initialize();
         $this->loadHelper('Dompdf.Dompdf');
     }
@@ -43,7 +43,7 @@ class PdfView extends View {
 			$this->config = array_merge($this->config, $viewOptions['config']);
     }
 
-	public function render($view = null, $layout = null) {
+	public function render($view = null, $layout = null): string {
 
 		$this->pdf = new Dompdf($this->config);
 		$this->pdf->setPaper($this->config['size'], $this->config['orientation']);
