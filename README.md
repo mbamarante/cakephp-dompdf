@@ -1,9 +1,9 @@
 # Dompdf plugin for CakePHP
 
 ## Requirements
-- PHP version 5.4.16 or higher
-- CakePhp 3.0 or higher
-- Dompdf 0.7
+- PHP version 7.2 or higher
+- CakePhp 4.0 or higher
+- Dompdf 0.8.6
 
 ## Installation
 
