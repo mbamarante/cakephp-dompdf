@@ -8,6 +8,7 @@ use Cake\Event\EventManager;
 use Cake\Network\Request;
 use Cake\Http\Response;
 use Cake\Http\ServerRequest;
+
 class PdfView extends View {
 
 	private $config = [
