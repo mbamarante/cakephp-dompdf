@@ -6,8 +6,8 @@ use Dompdf\Dompdf;
 use Dompdf\FontMetrics;
 use Cake\Event\EventManager;
 use Cake\Network\Request;
-use Cake\Network\Response;
-
+use Cake\Http\Response;
+use Cake\Http\ServerRequest;
 class PdfView extends View {
 
 	private $config = [
@@ -36,7 +36,7 @@ class PdfView extends View {
         $this->loadHelper('Dompdf.Dompdf');
     }
 
-	public function __construct(Request $request = null, Response $response = null, EventManager $eventManager = null, array $viewOptions = []) {
+	public function __construct(ServerRequest $request = null, Response $response = null, EventManager $eventManager = null, array $viewOptions = []) {
 		parent::__construct($request, $response, $eventManager, $viewOptions);
 
 		if ( isset($viewOptions['config']) )
